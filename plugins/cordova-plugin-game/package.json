@@ -1,0 +1,66 @@
+{
+  "_from": "cordova-plugin-game",
+  "_id": "cordova-plugin-game@1.0.120",
+  "_inBundle": false,
+  "_integrity": "sha1-E2OE3GWM28yCIlAjZ6utj48W0Wg=",
+  "_location": "/cordova-plugin-game",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-game",
+    "name": "cordova-plugin-game",
+    "escapedName": "cordova-plugin-game",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-game/-/cordova-plugin-game-1.0.120.tgz",
+  "_shasum": "136384dc658cdbcc8222502367abad8f8f16d168",
+  "_spec": "cordova-plugin-game",
+  "_where": "C:\\Users\\Kane\\Desktop\\eggerz\\Eggerz",
+  "author": {
+    "name": "cranberrygame"
+  },
+  "bugs": {
+    "url": "https://github.com/cranberrygame/cordova-plugin-game/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-game",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "show leaderboard and achievements (google play game and game center, SDK)",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "homepage": "https://github.com/cranberrygame/cordova-plugin-game#readme",
+  "keywords": [
+    "cordova",
+    "plugin",
+    "game",
+    "google play game",
+    "game center",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-game",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cranberrygame/cordova-plugin-game.git"
+  },
+  "version": "1.0.120"
+}
