@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Eggerz",
+  "short_name": "Eggerz",
+  "version": "com.phonegap.helloworld",
+  "description": "A simple clicker game UP834734",
+  "author": "UP834734",
+  "icons": [],
+  "start_url": "/index.html"
+}
