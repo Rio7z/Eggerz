@@ -104,5 +104,16 @@
     "variables": {
       "APP_ID": "844434853442"
     }
+  },
+  "cordova-plugin-facebook4": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-facebook4"
+    },
+    "is_top_level": true,
+    "variables": {
+      "APP_ID": "844434853442",
+      "APP_NAME": "Eggerz"
+    }
   }
 }

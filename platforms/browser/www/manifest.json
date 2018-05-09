@@ -3,9 +3,15 @@
   "display": "standalone",
   "name": "Eggerz",
   "short_name": "Eggerz",
-  "version": "com.phonegap.helloworld",
+  "version": "kane.eggerz",
   "description": "A simple clicker game UP834734",
   "author": "UP834734",
-  "icons": [],
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ],
   "start_url": "/index.html"
 }
