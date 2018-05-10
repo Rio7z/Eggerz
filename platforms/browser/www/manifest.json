@@ -6,13 +6,7 @@
   "version": "kane.eggerz",
   "description": "A simple clicker game UP834734",
   "author": "UP834734",
-  "icons": [
-    {
-      "src": "icon.png",
-      "type": "image/png",
-      "sizes": "undefinedxundefined"
-    }
-  ],
+  "icons": [],
   "orientation": "portrait",
   "start_url": "/index.html"
 }

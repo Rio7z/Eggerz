@@ -8,13 +8,11 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="msapplication-tap-highlight" content="no">
 	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
 </head>
 
 <body>
-
-		<div id="loading">Loading</div>
-
-
+	<div id="loading">Loading...</div>
 	<div id="topNav">
 		<div class="score">
 			<div id="scoreDisplay">Click!</div>
@@ -32,61 +30,70 @@
 			<div class="purchasebox">
 				<img class="egg-img" src="img/upgrade1.svg">Crack extra egg after 5 cracks: 1,000 Eggs</img>
 			</div>
-				<div id="buyClickBtn" class="purchased purchasebuttons spacing">
-					<img class="purchasebtn-img" src="img/purchasebtn.svg"></img>
-        </div>
+			<div id="buyClickBtn" class="purchased purchasebuttons spacing">
+				<img class="purchasebtn-img" src="img/purchasebtn.svg"></img>
+			</div>
 		</ul>
-		<h1> Clickers </h1>
 		<ul>
 			<div class="purchasebox">
 				<img class="egg-img" src="img/upgrade2.svg">Crack egg every 10 seconds: 100 Eggs</img>
 			</div>
-				<div id="buyTimeBtn" class="purchasebuttons">
-					<img class="purchasebtn-img" src="img/purchasebtn.svg"></img>
-        </div>
+			<div id="buyTimeBtn" class="purchasebuttons">
+				<img class="purchasebtn-img" src="img/purchasebtn.svg"></img>
+			</div>
 		</ul>
 		<ul>
 			<div class="purchasebox">
 				<img class="egg-img" src="img/upgrade3.svg">Crack egg every 5 seconds: 1,000 Eggs</img>
 			</div>
-				<div id="buyTimeBtn1" class="purchasebuttons">
-					<img class="purchasebtn-img" src="img/purchasebtn.svg"></img>
-        </div>
+			<div id="buyTimeBtn1" class="purchasebuttons">
+				<img class="purchasebtn-img" src="img/purchasebtn.svg"></img>
+			</div>
 		</ul>
 		<ul>
 			<div class="purchasebox">
 				<img class="egg-img" src="img/upgrade4.svg">Crack egg every 3 seconds: 10,000 Eggs</img>
 			</div>
-				<div id="buyTimeBtn2" class="purchasebuttons">
-					<img class="purchasebtn-img" src="img/purchasebtn.svg"></img>
-        </div>
+			<div id="buyTimeBtn2" class="purchasebuttons">
+				<img class="purchasebtn-img" src="img/purchasebtn.svg"></img>
+			</div>
 		</ul>
 		<ul>
 			<div class="purchasebox">
 				<img class="egg-img" src="img/upgrade5.svg">Crack egg every 1 seconds: 100,000 Eggs</img>
 			</div>
-				<div id="buyTimeBtn3" class="purchasebuttons">
-					<img class="purchasebtn-img" src="img/purchasebtn.svg"></img>
-        </div>
-    </ul>
-    <div class="bottomspacing"></div>
+			<div id="buyTimeBtn3" class="purchasebuttons">
+				<img class="purchasebtn-img" src="img/purchasebtn.svg"></img>
+			</div>
+		</ul>
+		<div class="bottomspacing"></div>
 	</div>
-
 	<div id="bottomNav">
 		<div id="gameButton" class="active">
-				<img class="buttonimage" src="img/eggsbtn.svg" />
+			<img class="buttonimage" src="img/eggsbtn.svg" />
 		</div>
 		<div id="upgradesButton" class="">
-				<img class="buttonimage" src="img/eggincu.svg" />
+			<img class="buttonimage" src="img/eggincu.svg" />
 		</div>
-
 		<div id="leaderboardButton" class="">
-				<img class="buttonimage" src="img/leaderboardbutton.svg" />
+			<img class="buttonimage" src="img/leaderboardbutton.svg" />
 		</div>
 	</div>
+	<script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCoFl8GIea4RdPtTdRLvm7vMc6jWqadEXU",
+    authDomain: "eggerz-41266217.firebaseapp.com",
+    databaseURL: "https://eggerz-41266217.firebaseio.com",
+    projectId: "eggerz-41266217",
+    storageBucket: "eggerz-41266217.appspot.com",
+    messagingSenderId: "844434853442"
+  };
+  firebase.initializeApp(config);
+</script>
 	<script src="js/index.js"></script>
-  <script src="js/app.js"></script>
-
+	<script src="js/app.js"></script>
 </body>
 
 </html>

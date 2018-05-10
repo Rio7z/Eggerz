@@ -18,6 +18,7 @@ var boughtTime2 = false;
 var boughtTime3 = false;
 var boughtTime4 = false;
 
+
 window.addEventListener("load", function(){
   var loading = document.getElementById("loading");
   document.body.removeChild(loading);
@@ -110,15 +111,11 @@ buyTimeBtn3.addEventListener("click", function() {
 gameButton.addEventListener("click", function () {
    game.classList.remove('hidden')
    upgrades.classList.add('hidden')
-   shop.classList.add('hidden')
-   leaderboard.classList.add('hidden')
 });
 
 upgradesButton.addEventListener("click", function () {
    game.classList.add('hidden')
    upgrades.classList.remove('hidden')
-   shop.classList.add('hidden')
-   leaderboard.classList.add('hidden')
 });
 
 egg.addEventListener("click", function createNumbers(score) {
@@ -248,6 +245,13 @@ document.getElementById('egg').addEventListener('click', function() {
 this.src = images[i >= images.length - 1 ? i = 0 : ++i];
 
 }, false);
+
+leaderboardButton.addEventListener("click", function() {
+    alert('Failure connecting to Google Play Games, leaderboard unavailable')
+  });
+
+
+
 
 /*var eggImages = new Array();
 
