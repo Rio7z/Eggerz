@@ -5,12 +5,10 @@ var multiplier = 1;
 
 var game = document.getElementById('game');
 var upgrade = document.getElementById('upgrades');
-var shop = document.getElementById('shop');
 var leaderboard = document.getElementById('leaderboard');
 
 var gameButton = document.getElementById('gameButton')
 var upgradesButton = document.getElementById('upgradesButton')
-var shopButton = document.getElementById('shopButton')
 var leaderboardButton = document.getElementById('leaderboardButton')
 
 var boughtClick = false;
@@ -19,6 +17,11 @@ var boughtTime1 = false;
 var boughtTime2 = false;
 var boughtTime3 = false;
 var boughtTime4 = false;
+
+window.addEventListener("load", function(){
+  var loading = document.getElementById("loading");
+  document.body.removeChild(loading);
+  });
 
 egg.addEventListener("click", function() {
   score == multiplier;
@@ -115,13 +118,6 @@ upgradesButton.addEventListener("click", function () {
    game.classList.add('hidden')
    upgrades.classList.remove('hidden')
    shop.classList.add('hidden')
-   leaderboard.classList.add('hidden')
-});
-
-shopButton.addEventListener("click", function () {
-   game.classList.add('hidden')
-   upgrades.classList.add('hidden')
-   shop.classList.remove('hidden')
    leaderboard.classList.add('hidden')
 });
 
@@ -256,7 +252,7 @@ img.src = images[j];
 }
 
 document.getElementById('egg').addEventListener('click', function() {
-this.src = images[i >= images.length - 0 ? i = 0 : ++i];
+this.src = images[i >= images.length - 1 ? i = 0 : ++i];
 
 }, false);
 
