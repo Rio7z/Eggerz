@@ -10,7 +10,7 @@
     <content src="/index.html" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="26" />
-    <preference name="android-versionCode" value="100092" />
+    <preference name="android-versionCode" value="100093" />
     <preference name="fullscreen" value="true" />
     <preference name="orientation" value="portrait" />
 
@@ -110,7 +110,4 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <plugin name="cordova-plugin-game" spec="~1.0.120">
-        <variable name="APP_ID" value="844434853442" />
-    </plugin>
 </widget>

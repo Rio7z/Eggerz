@@ -121,13 +121,6 @@ upgradesButton.addEventListener("click", function () {
    leaderboard.classList.add('hidden')
 });
 
-leaderboardButton.addEventListener("click", function () {
-   game.classList.add('hidden')
-   upgrades.classList.add('hidden')
-   shop.classList.add('hidden')
-   leaderboard.classList.remove('hidden')
-});
-
 egg.addEventListener("click", function createNumbers(score) {
     var div = document.createElement("div") ;
     div.innerText = multiplier ;
