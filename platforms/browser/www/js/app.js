@@ -1,7 +1,6 @@
-
 var egg = document.querySelector("#egg");
 var scoreDisplay = document.querySelector("#scoreDisplay");
-var score = 0;
+var score = window.localStorage.getItem("score", score);
 var multiplier = 1;
 
 var game = document.getElementById('game');
@@ -21,101 +20,92 @@ var boughtTime2 = false;
 var boughtTime3 = false;
 var boughtTime4 = false;
 
+
 egg.addEventListener("click", function() {
   score == multiplier;
-  score++;
+  window.localStorage.setItem("score", score++)
   scoreDisplay.textContent = score;
 })
 
+
 buyClickBtn.addEventListener("click", function() {
-  var buyClickBtn = document.querySelector("#buyClickBtn");
   if (score >= 1000 && boughtClick === false) {
-    scoreDisplay.textContent = score;
-    this.classList.add("disabled", "disabled");
-    this.textContent = "Purchased";
+    window.localStorage.setItem("score", 0)
+    this.innerHTML = "<img class='purchasebtn-img' src='img/purchasedbtn.svg'></img>";
     boughtClick = true;
     score -= 1000;
     multiplier = 2;
-  } else if (score < 1000 && boughtClick === false) {
+    scoreDisplay.textContent = score;
+  } else {
     alert("You don't have enough eggs!");
   }
+  scoreDisplay.textContent = score;
 });
 
 buyTimeBtn.addEventListener("click", function() {
-  var buyTimeBtn = document.querySelector("#buyTimeBtn");
-  var boughtTime0 = false;
-  if (score >= 100 && boughtTime0 === false) {
+  if (score >= 10 && boughtTime0 === false) {
     setInterval(function() {
-      score++;
+      window.localStorage.setItem("score", score++);
       scoreDisplay.textContent = score;
     }, 10000);
-    this.classList.add("disabled", "disabled");
-    this.textContent = "Purchased";
+    this.innerHTML = "<img class='purchasebtn-img' src='img/purchasedbtn.svg'></img>";
     boughtTime0 = true;
-    score -= 100;
-  } else if (score < 100 && boughtTime0 === false) {
+    score -= 10;
+  } else {
     alert("You don't have enough eggs!");
   }
+  scoreDisplay.textContent = score;
 });
 
 buyTimeBtn1.addEventListener("click", function() {
-  var buyTimeBtn = document.querySelector("#buyTimeBtn1");
-  var boughtTime1 = false;
   if (score >= 1000 && boughtTime1 === false) {
     setInterval(function() {
-      score++;
+      window.localStorage.setItem("score", score++);
       scoreDisplay.textContent = score;
     }, 5000);
-    this.classList.add("disabled", "disabled");
-    this.textContent = "Purchased";
+    window.localStorage.setItem("score", score)
+    this.innerHTML = "<img class='purchasebtn-img' src='img/purchasedbtn.svg'></img>";
     boughtTime1 = true;
     score -= 1000;
-  } else if (score < 1000 && boughtTime1 === false) {
+  } else {
     alert("You don't have enough eggs!");
   }
+  scoreDisplay.textContent = score;
 });
 
 buyTimeBtn2.addEventListener("click", function() {
-  var buyTimeBtn2 = document.querySelector("#buyTimeBtn");
-  var boughtTime2 = false;
   if (score >= 10000 && boughtTime2 === false) {
     setInterval(function() {
-      score++;
+      window.localStorage.setItem("score", score++);
       scoreDisplay.textContent = score;
     }, 2000);
-    this.classList.add("disabled", "disabled");
-    this.textContent = "Purchased";
+    window.localStorage.setItem("score", score)
+    this.innerHTML = "<img class='purchasebtn-img' src='img/purchasedbtn.svg'></img>";
     boughtTime2 = true;
     score -= 10000;
-  } else if (score < 10000 && boughtTime2 === false) {
+  } else {
     alert("You don't have enough eggs!");
   }
+  scoreDisplay.textContent = score;
 });
 
 buyTimeBtn3.addEventListener("click", function() {
-  var buyTimeBtn3 = document.querySelector("#buyTimeBtn");
-  var boughtTime3 = false;
   if (score >= 100000 && boughtTime3 === false) {
     setInterval(function() {
-      score++;
+      window.localStorage.setItem("score", score++);
       scoreDisplay.textContent = score;
     }, 1000);
-    this.classList.add("disabled", "disabled");
-    this.textContent = "Purchased";
+    window.localStorage.setItem("score", score)
+    this.innerHTML = "<img class='purchasebtn-img' src='img/purchasedbtn.svg'></img>";
     boughtTime3 = true;
     score -= 100000;
-  } else if (score < 100000 && boughtTime3 === false) {
+  } else {
     alert("You don't have enough eggs!");
   }
+  scoreDisplay.textContent = score;
 });
 
-
 gameButton.addEventListener("click", function () {
-   gameButton.classList.add('active')
-   upgradesButton.classList.remove('active')
-   shopButton.classList.remove('active')
-   leaderboardButton.classList.remove('active')
-
    game.classList.remove('hidden')
    upgrades.classList.add('hidden')
    shop.classList.add('hidden')
@@ -123,11 +113,6 @@ gameButton.addEventListener("click", function () {
 });
 
 upgradesButton.addEventListener("click", function () {
-   gameButton.classList.remove('active')
-   upgradesButton.classList.add('active')
-   shopButton.classList.remove('active')
-   leaderboardButton.classList.remove('active')
-
    game.classList.add('hidden')
    upgrades.classList.remove('hidden')
    shop.classList.add('hidden')
@@ -135,11 +120,6 @@ upgradesButton.addEventListener("click", function () {
 });
 
 shopButton.addEventListener("click", function () {
-   gameButton.classList.remove('active')
-   upgradesButton.classList.remove('active')
-   shopButton.classList.add('active')
-   leaderboardButton.classList.remove('active')
-
    game.classList.add('hidden')
    upgrades.classList.add('hidden')
    shop.classList.remove('hidden')
@@ -147,11 +127,6 @@ shopButton.addEventListener("click", function () {
 });
 
 leaderboardButton.addEventListener("click", function () {
-   gameButton.classList.remove('active')
-   upgradesButton.classList.remove('active')
-   shopButton.classList.remove('active')
-   leaderboardButton.classList.add('active')
-
    game.classList.add('hidden')
    upgrades.classList.add('hidden')
    shop.classList.add('hidden')
@@ -251,8 +226,28 @@ var images = [
   './img/Asset 70.svg',
   './img/Asset 71.svg',
   './img/Asset 72.svg',
-  './img/Asset 73.svg'
-],
+  './img/Asset 73.svg',
+  './img/Asset 74.svg',
+  './img/Asset 75.svg',
+  './img/Asset 76.svg',
+  './img/Asset 77.svg',
+  './img/Asset 78.svg',
+  './img/Asset 79.svg',
+  './img/Asset 80.svg',
+  './img/Asset 81.svg',
+  './img/Asset 82.svg',
+  './img/Asset 83.svg',
+  './img/Asset 84.svg',
+  './img/Asset 85.svg',
+  './img/Asset 86.svg',
+  './img/Asset 87.svg',
+  './img/Asset 88.svg',
+  './img/Asset 89.svg',
+  './img/Asset 90.svg',
+  './img/Asset 91.svg',
+  './img/Asset 92.svg',
+  './img/Asset 93.svg',
+  './img/Asset 94.svg'],
 
 i = 0;
 

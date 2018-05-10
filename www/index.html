@@ -1,90 +1,96 @@
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Eggerz</title>
-    <link rel="stylesheet" href="css/style.css">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="msapplication-tap-highlight" content="no">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 
-  </head>
-  <body>
+<head>
+	<meta charset="utf-8">
+	<title>Eggerz</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+</head>
 
-
-  <div id="topNav">
-    <div class="score">
-      <div id="eggscore"> <img id="scoreimage" src="img/darkerleaves.png">
-                      <span id="scoreDisplay">0</span>
-                 </img>   </div>  </div>
-  </div>
-
-  <div id="backgroundimage"> <img img class="BGimg" src="img/background.svg"> </img>
-  <div id="game">
-    <img id="egg" src="img/Asset 1.svg">
-  </div>
- </div>
-  <div id="upgrades" class="hidden">
-    <h1> Upgrades </h1>
-    <h3> Multipliers </h3>
-    <ul>
-      <div class="purchasebox">
-            <div class="purchaseboxitem1"> <img class="egg-img2" src="img/upgrade1.svg"> </img></div>
-            <div class="purchaseboxitem2">Crack extra egg after 5 cracks: 1,000 Eggs</div>
-          </div>
-      <div><button id="buyClickBtn" class="purchased purchasebuttons spacing" > <img class="purchasebtn-img" src="img/purchasebtn.svg"> </img></button></div>
-
+<body>
+	<div id="topNav">
+		<div class="score">
+			<div id="scoreDisplay">Click!</div>
+		</div>
+	</div>
+	<div id="backgroundimage">
+		<img class="BGimg" src="img/background.svg"></img>
+		<div id="game">
+			<img id="egg" src="img/Asset 1.svg">
+		</div>
+	</div>
+	<div id="upgrades" class="hidden">
+		<h1> Upgrades </h1>
+		<h3> Multipliers </h3>
+		<ul>
+			<div class="purchasebox">
+				<img class="egg-img" src="img/upgrade1.svg">Crack extra egg after 5 cracks: 1,000 Eggs</img>
+			</div>
+				<div id="buyClickBtn" class="purchased purchasebuttons spacing">
+					<img class="purchasebtn-img" src="img/purchasebtn.svg"></img>
+        </div>
+		</ul>
+		<h3> Clickers </h3>
+		<ul>
+			<div class="purchasebox">
+				<img class="egg-img" src="img/upgrade2.svg">Crack egg every 10 seconds: 100 Eggs</img>
+			</div>
+				<div id="buyTimeBtn" class="purchasebuttons">
+					<img class="purchasebtn-img" src="img/purchasebtn.svg"></img>
+        </div>
+		</ul>
+		<ul>
+			<div class="purchasebox">
+				<img class="egg-img" src="img/upgrade3.svg">Crack egg every 5 seconds: 1,000 Eggs</img>
+			</div>
+				<div id="buyTimeBtn1" class="purchasebuttons">
+					<img class="purchasebtn-img" src="img/purchasebtn.svg"></img>
+        </div>
+		</ul>
+		<ul>
+			<div class="purchasebox">
+				<img class="egg-img" src="img/upgrade4.svg">Crack egg every 3 seconds: 10,000 Eggs</img>
+			</div>
+				<div id="buyTimeBtn2" class="purchasebuttons">
+					<img class="purchasebtn-img" src="img/purchasebtn.svg"></img>
+        </div>
+		</ul>
+		<ul>
+			<div class="purchasebox">
+				<img class="egg-img" src="img/upgrade5.svg">Crack egg every 1 seconds: 100,000 Eggs</img>
+			</div>
+				<div id="buyTimeBtn3" class="purchasebuttons">
+					<img class="purchasebtn-img" src="img/purchasebtn.svg"></img>
+        </div>
     </ul>
-    <h3> Clickers </h3>
-    <ul>
-        <div class="purchasebox">
-              <div class="purchaseboxitem1"><img class="egg-img2" src="img/upgrade2.svg"> </img></div>
-              <div class="purchaseboxitem2 ">Crack egg every 10 seconds: 100 Eggs</div>
-         </div>
-      <div><button id="buyTimeBtn"  class="purchasebuttons"><img class="purchasebtn-img" src="img/purchasebtn.svg"> </img></button></div>
-
-    </ul>
-    <ul>
-      <div class="purchasebox">
-            <div class="purchaseboxitem1"><img class="egg-img2" src="img/upgrade3.svg"> </img></div>
-            <div class="purchaseboxitem2 ">Crack egg every 5 seconds: 1,000 Eggs</div>
-       </div>
-      <div><button id="buyTimeBtn1"  class="purchasebuttons"> <img class="purchasebtn-img" src="img/purchasebtn.svg"> </img> </button></div>
-    </ul>
-    <ul>
-      <div class="purchasebox">
-            <div class="purchaseboxitem1"><img class="egg-img2" src="img/upgrade4.svg"> </img></div>
-            <div class="purchaseboxitem2 ">Crack egg every 3 seconds: 10,000 Eggs</div>
-       </div>
-      <div><button id="buyTimeBtn2"  class="purchasebuttons"> <img class="purchasebtn-img" src="img/purchasebtn.svg"> </img> </button></div>
-    </ul>
-    <ul>
-      <div class="purchasebox">
-            <div class="purchaseboxitem1"><img class="egg-img2" src="img/upgrade5.svg"> </img></div>
-            <div class="purchaseboxitem2 ">Crack egg every 1 seconds: 100,000 Eggs</div>
-       </div>
-     <div><button id="buyTimeBtn3"  class="purchasebuttons bottomspacing"> <img class="purchasebtn-img" src="img/purchasebtn.svg"> </img> </button></div>
-    </ul>
-
-  </div>
-  <div id="shop" class="hidden">
-    <h1>heyshop</h1>
-  </div>
-  <div id="leaderboard" class="hidden">
-    <h1>hey</h1>
-  </div>
-  <div id="bottomNav">
-
-    <div id="gameButton" class="gameButton active"><button class="gamebutton-inner"> <img class="buttonimage" src="img/eggsbtn.svg"> </img> </button></div>
-
-    <div id="upgradesButton" class="gameButton"> <button class="gamebutton-inner"> <img class="buttonimage" src="img/eggincu.svg"> </img> </button></div>
-
-    <div id="shopButton" class="gameButton"> <button class="gamebutton-inner"> <img class="buttonimage" src="img/henhouse.svg"> </img> </button></div>
-
-    <div id="leaderboardButton" class="gameButton"> <button class="gamebutton-inner"> <img class="buttonimage" src="img/leaderboardbutton.svg"> </img> </button></div>
-
-  </div>
-  <script src="js/index.js"></script>
+    <div class="bottomspacing"></div>
+	</div>
+	<div id="shop" class="hidden">
+		<h1>heyshop</h1>
+	</div>
+	<div id="leaderboard" class="hidden">
+		<h1>hey</h1>
+	</div>
+	<div id="bottomNav">
+		<div id="gameButton" class="active">
+				<img class="buttonimage" src="img/eggsbtn.svg" />
+		</div>
+		<div id="upgradesButton" class="">
+				<img class="buttonimage" src="img/eggincu.svg" />
+		</div>
+		<div id="shopButton" class="">
+				<img class="buttonimage" src="img/henhouse.svg" />
+		</div>
+		<div id="leaderboardButton" class="">
+				<img class="buttonimage" src="img/leaderboardbutton.svg" />
+		</div>
+	</div>
+	<script src="js/index.js"></script>
   <script src="js/app.js"></script>
-  </body>
+  
+</body>
+
 </html>

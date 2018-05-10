@@ -412,14 +412,6 @@ module.exports = [
         "clobbers": [
             "window.game"
         ]
-    },
-    {
-        "file": "plugins/cordova-plugin-facebook4/www/facebook-browser.js",
-        "id": "cordova-plugin-facebook4.FacebookConnectPluginBrowser",
-        "pluginId": "cordova-plugin-facebook4",
-        "clobbers": [
-            "facebookConnectPlugin"
-        ]
     }
 ];
 module.exports.metadata = 
@@ -437,8 +429,7 @@ module.exports.metadata =
     "cordova-plugin-inappbrowser": "1.7.2",
     "cordova-plugin-network-information": "1.3.4",
     "cordova-plugin-vibration": "2.1.6",
-    "cordova-plugin-game": "1.0.120",
-    "cordova-plugin-facebook4": "2.1.0"
+    "cordova-plugin-game": "1.0.120"
 }
 // BOTTOM OF METADATA
 });
