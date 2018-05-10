@@ -20,7 +20,6 @@ var boughtTime2 = false;
 var boughtTime3 = false;
 var boughtTime4 = false;
 
-
 egg.addEventListener("click", function() {
   score == multiplier;
   window.localStorage.setItem("score", score++)
@@ -257,7 +256,7 @@ img.src = images[j];
 }
 
 document.getElementById('egg').addEventListener('click', function() {
-this.src = images[i >= images.length - 1 ? i = 0 : ++i];
+this.src = images[i >= images.length - 0 ? i = 0 : ++i];
 
 }, false);
 

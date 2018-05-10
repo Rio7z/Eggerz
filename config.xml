@@ -10,7 +10,7 @@
     <content src="/index.html" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="26" />
-    <preference name="android-versionCode" value="100091" />
+    <preference name="android-versionCode" value="100092" />
     <preference name="fullscreen" value="true" />
     <preference name="orientation" value="portrait" />
 
